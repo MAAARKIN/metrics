@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h3>{{ msg }}</h3>
+    <h4>{{ msg }}</h4>
     {{ msg }}
     <h2>Essential Links</h2>
     <ul>
@@ -40,11 +40,8 @@
 
 <style scoped>
   #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    /*-webkit-font-smoothing: antialiased;*/
-    /*-moz-osx-font-smoothing: grayscale;*/
+    font-family: "Roboto", sans-serif;
     text-align: center;
-    /*color: #2c3e50;*/
     width: 400px; 
     height: auto;
   }
@@ -53,10 +50,10 @@
     width: 200px;
     height: 200px;
   }
-
+/*
   h1, h2 {
     font-weight: normal;
-  }
+  }*/
 
   ul {
     list-style-type: none;
