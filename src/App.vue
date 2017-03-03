@@ -1,29 +1,27 @@
 <template>
-  <div id="app">
+  <div class="container">
     <h4>{{ msg }}</h4>
-    {{ msg }}
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
+    <hr/>
+
     <div class="row">
-        teste
+      <form class="col s12">
+        <div class="row">
+          <div class="col s12">
+          <div class="input-field col s7">
+              <input id="descricao" type="text" class="validate">
+              <label for="descricao">Descricao</label>
+            </div>
+
+            <div class="input-field col s3"> 
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+            <!-- <a class="waves-effect waves-light btn">button</a> -->
+          </div>
+        </div>
+      </form>
     </div>
-
-    <div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div>
-
-    <a class="waves-effect waves-light btn">button</a>
-
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vueify" target="_blank">vueify</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
   </div>
 </template>
 
@@ -38,30 +36,23 @@
   }
 </script>
 
-<style scoped>
-  #app {
+<style>
+  html {
     font-family: "Roboto", sans-serif;
-    text-align: center;
     width: 400px; 
     height: auto;
   }
 
-  img {
-    width: 200px;
-    height: 200px;
+  @media only screen and (min-width: 993px)!
+  .container {
+    width: 85%;
   }
-/*
-  h1, h2 {
-    font-weight: normal;
-  }*/
-
-  ul {
-    list-style-type: none;
-    padding: 0;
+  @media only screen and (min-width: 993px)
+  .container {
+    width: 70%;
   }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
+  @media only screen and (min-width: 601px)
+  .container {
+    width: 85%;
   }
 </style>
