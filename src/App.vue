@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img src="http://vuejs.org/images/logo.png">
-    <h1>{{ msg }}</h1>
+    <h3>{{ msg }}</h3>
+    {{ msg }}
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -10,6 +10,14 @@
       <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
     </ul>
     <h2>Ecosystem</h2>
+    <div class="row">
+        teste
+    </div>
+
+    <div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div>
+
+    <a class="waves-effect waves-light btn">button</a>
+
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
@@ -24,7 +32,7 @@
     name: 'app',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: 'Metrics'
       }
     }
   }
@@ -33,11 +41,10 @@
 <style scoped>
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    /*-webkit-font-smoothing: antialiased;*/
+    /*-moz-osx-font-smoothing: grayscale;*/
     text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    /*color: #2c3e50;*/
     width: 400px; 
     height: auto;
   }
@@ -59,9 +66,5 @@
   li {
     display: inline-block;
     margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
   }
 </style>
