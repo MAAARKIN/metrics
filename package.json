@@ -10,6 +10,9 @@
     "build": "cross-env NODE_ENV=production browserify -g envify src/main.js | uglifyjs -c warnings=false -m > app/build.js"
   },
   "dependencies": {
+    "easytimer": "^1.1.1",
+    "lodash": "^4.17.4",
+    "uuid": "^3.0.1",
     "vue": "^2.0.1"
   },
   "devDependencies": {
